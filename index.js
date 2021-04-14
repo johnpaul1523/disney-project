@@ -18,6 +18,11 @@ $( ".emojiImage" ).click(function() {
     $(this).next('.answerImage').show();
 });
 
+$( ".nextButton" ).click(function() {
+    $(this).next('.emojiImage').show();
+    $(this).next('.answerImage').hide();
+});
+
 let $xhr = $.getJSON('https://accesscontrolalloworiginall.herokuapp.com/http://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=3cf172d6dbfd4c648fcde545ee9fa8a0');
 
 $xhr.done(function(data) {
