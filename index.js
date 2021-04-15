@@ -18,11 +18,55 @@ $( ".emojiImage" ).click(function() {
     $(this).next('.answerImage').show();
 });
 
-$( ".nextButton" ).click(function() {
-    $(this).next('.emojiImage').show();
-    $(this).next('.answerImage').hide();
+$( ".title button" ).click(function() {
+    $('.firstImage').show();
+    $('.title').hide();
 });
 
+$( ".answerOne button" ).click(function() {
+    $('.imageTwo').show();
+    $('.answerOne').hide();
+});
+
+$( ".answerTwo button" ).click(function() {
+    $('.imageThree').show();
+    $('.answerTwo').hide();
+});
+
+$( ".answerThree button" ).click(function() {
+    $('.imageFour').show();
+    $('.answerThree').hide();
+});
+
+$( ".answerFour button" ).click(function() {
+    $('.imageFive').show();
+    $('.answerFour').hide();
+});
+
+$( ".answerFive button" ).click(function() {
+    $('.imageSix').show();
+    $('.answerFive').hide();
+});
+
+$( ".answerSix button" ).click(function() {
+    $('.imageSeven').show();
+    $('.answerSix').hide();
+});
+
+$( ".answerSeven button" ).click(function() {
+    $('.imageEight').show();
+    $('.answerSeven').hide();
+});
+
+$( ".answerEight button" ).click(function() {
+    $('.imageNine').show();
+    $('.answerEight').hide();
+});
+
+$( ".answerNine button" ).click(function() {
+    $('.imageTen').show();
+    $('.answerNine').hide();
+});
 let $xhr = $.getJSON('https://accesscontrolalloworiginall.herokuapp.com/http://newsapi.org/v2/top-headlines?country=gb&category=sports&apiKey=3cf172d6dbfd4c648fcde545ee9fa8a0');
 
 $xhr.done(function(data) {

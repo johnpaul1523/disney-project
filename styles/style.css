@@ -64,6 +64,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  display: none;
 }
 
 header h1 {
@@ -246,7 +247,7 @@ nav ul ul li {
 }
 
 .answerImage {
-  display: none;;
+  display: none;
 }
 
 .emojiImage img {
@@ -264,10 +265,14 @@ nav ul ul li {
 
 .emojiImage {
   display: none;
+  cursor: pointer;
 }
 
-.firstImage {
+.title {
   display: block;
+  width: 100%;
+  position: relative;
+  top: 30%;
 }
 
 .answerImage img {
@@ -278,13 +283,30 @@ nav ul ul li {
   margin: 0 auto;
   display: block;
   top: 25%;
-  position: absolute;
-  left: 30%;
+  position: relative;
+  left: 0%;
 }
 
 h1 {
   top: 84%;
-  position: absolute;
-  left: 46%;
+  position: relative;
+  text-align: center;
   color: #fff;
+}
+
+button {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+
+.cinderella-img {
+  object-fit: contain !important;
+  background-color: #fff;
+}
+
+.cinderella-img {
+  object-fit: contain !important;
+  background-color: #fff;
 }
